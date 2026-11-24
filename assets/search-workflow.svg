@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="404" viewBox="0 0 1040 404" role="img" aria-labelledby="title description">
+  <title id="title">跨平台检索编排流程</title>
+  <desc id="description">先按复杂度定级并按任务选择 2 到 4 个互补信源，再由本 Skill 编排现有公开 API、CLI、网页搜索、浏览器或按需触发的专用信源执行 Skill 获取原文，最后按动态时效与离散证据分级交付结论、验收项与覆盖缺口。</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FBFDFF"/>
+      <stop offset="1" stop-color="#EEF6FB"/>
+    </linearGradient>
+    <style>
+      text { font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", "Arial Unicode MS", sans-serif; }
+      .heading { font-size: 24px; font-weight: 700; fill: #172D41; }
+      .detail { font-size: 16.5px; fill: #415A70; }
+      .source { font-size: 18px; font-weight: 600; fill: #23475D; }
+      .sub { font-size: 13.5px; fill: #4B6A82; }
+      .badge { font-size: 14px; font-weight: 700; fill: #245C79; }
+      .step { font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace; font-size: 15px; font-weight: 700; fill: #245C79; }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="1038" height="402" rx="22" fill="url(#background)" stroke="#D8E5EE" stroke-width="2"/>
+
+  <!-- Main vertical & fan-out connectors (centered at x=408; bottom centers: 173, 408, 643) -->
+  <g fill="none" stroke="#648FA7" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M408 90v18m-5-5 5 5 5-5"/>
+    <path d="M408 176v18m-5-5 5 5 5-5"/>
+    <path d="M408 262v40m-5-5 5 5 5-5"/>
+    <path d="M408 282H173v20m-5-5 5 5 5-5"/>
+    <path d="M408 282H643v20m-5-5 5 5 5-5"/>
+  </g>
+
+  <!-- Optional bypass dashed connector (centered at x=876) -->
+  <g fill="none" stroke="#7A9EB3" stroke-width="2" stroke-dasharray="6 5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M752 144h20"/>
+    <path d="M876 186v116"/>
+  </g>
+  <g fill="none" stroke="#7A9EB3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m767 139 6 5-6 5"/>
+    <path d="m871 297 5 5 5-5"/>
+  </g>
+
+  <!-- Step 01 -->
+  <g>
+    <rect x="64" y="26" width="688" height="64" rx="13" fill="#FFFFFF" stroke="#D9E6EE"/>
+    <rect x="86" y="43" width="38" height="30" rx="8" fill="#EAF4FA"/>
+    <text x="105" y="63" class="step" text-anchor="middle">01</text>
+    <text x="140" y="66" class="heading">定级拆题与选信源</text>
+    <text x="730" y="65" class="detail" text-anchor="end">Quick / Standard / Deep · 21 信源择优</text>
+  </g>
+
+  <!-- Step 02 -->
+  <g>
+    <rect x="64" y="112" width="688" height="64" rx="13" fill="#EAF6FD" stroke="#B8D7E8"/>
+    <rect x="86" y="129" width="38" height="30" rx="8" fill="#D7EBF7"/>
+    <text x="105" y="149" class="step" text-anchor="middle">02</text>
+    <text x="140" y="152" class="heading">检索编排与免登录穿透</text>
+    <text x="730" y="151" class="detail" text-anchor="end">默认直用已有入口 · 双语本地化查询</text>
+  </g>
+
+  <!-- Optional Bypass Box -->
+  <g>
+    <rect x="776" y="102" width="200" height="84" rx="13" fill="#FFFFFF" stroke="#9BB9CC" stroke-dasharray="6 4"/>
+    <text x="876" y="131" class="badge" text-anchor="middle">按需能力发现旁路</text>
+    <text x="876" y="154" class="sub" text-anchor="middle">仅在显式要求或硬阻断</text>
+    <text x="876" y="173" class="sub" text-anchor="middle">审查接入专用执行 Skill</text>
+  </g>
+
+  <!-- Step 03 -->
+  <g>
+    <rect x="64" y="198" width="688" height="64" rx="13" fill="#FFFFFF" stroke="#D9E6EE"/>
+    <rect x="86" y="215" width="38" height="30" rx="8" fill="#EAF4FA"/>
+    <text x="105" y="235" class="step" text-anchor="middle">03</text>
+    <text x="140" y="238" class="heading">原文核验与结构化交付</text>
+    <text x="730" y="237" class="detail" text-anchor="end">动态时效 · Tier 1/2/3 · 覆盖缺口</text>
+  </g>
+
+  <!-- Bottom execution targets -->
+  <g fill="#FFFFFF" stroke="#C7DCE9">
+    <rect x="64" y="306" width="218" height="68" rx="11"/>
+    <rect x="299" y="306" width="218" height="68" rx="11"/>
+    <rect x="534" y="306" width="218" height="68" rx="11"/>
+    <rect x="776" y="306" width="200" height="68" rx="11" stroke-dasharray="5 4"/>
+  </g>
+
+  <g text-anchor="middle">
+    <text x="173" y="335" class="source">公开 API / CLI</text>
+    <text x="173" y="357" class="sub">GitHub · HN · arXiv · HF</text>
+
+    <text x="408" y="335" class="source">搜索与原文抓取</text>
+    <text x="408" y="357" class="sub">中文长文 · 论坛 · 选型 · 媒体</text>
+
+    <text x="643" y="335" class="source">浏览器 / 登录交接</text>
+    <text x="643" y="357" class="sub">小红书 · X · 图文与评论</text>
+
+    <text x="876" y="335" class="source">专用执行 Skill</text>
+    <text x="876" y="357" class="sub">按需静态审查挂载</text>
+  </g>
+</svg>

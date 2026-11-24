@@ -1,0 +1,59 @@
+# OS & File Manager
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Python (scripts/public_search.py & local helpers)
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.Python
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / Skills CLI
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Editors & IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.bak
+*.orig
+
+# Local Agent Configs, Secrets & Session State
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+cookies.txt
+storage_state.json
+.codex/
+.claude/
+.agents/
+.cursor/
+
+# Local Search Playbooks, Scratch & Temporary Outputs
+.search-playbooks/
+tmp/
+temp/
+scratch/
+*.log
+*.tmp
